@@ -62,5 +62,6 @@
   },
   "peerDependencies": {
     "roblox-ts": "^3.0.0"
-  }
+  },
+  "homepage": "https://github.com/demonlexe/rbxts-water#readme"
 }
