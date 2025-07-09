@@ -84,11 +84,24 @@ All water objects must be **BaseParts**. A BasePart in Roblox is any physical pa
 
 ### 3. Client-Side Implementation
 
-The water system must run on the client side as a **StarterCharacterScript**. This ensures it runs for each player when they spawn.
+The water system must run on the client side under **StarterCharacterScripts**. This ensures it runs for each player when they spawn.
 
 ## Usage
 
-### 1. Create a StarterCharacterScript
+### 1. StarterCharacterScripts
+
+If using Rojo,  nclude this in your `default.project.json`
+```ts
+"StarterPlayer": {
+			"$className": "StarterPlayer",
+			"StarterCharacterScripts": {
+				"$className": "StarterCharacterScripts",
+				"TS": {
+					"$path": "out/clientChar"
+				}
+			}
+		},
+```
 
 Create a file at `src/clientChar/water.client.ts` with the following content:
 
@@ -162,7 +175,7 @@ waterConnection.Disconnect();
 3. **Check Part Properties**: Ensure all water parts have:
    - `CanCollide` set to **false**
    - `Anchored` set to **true**
-4. **Client-Side Script**: Ensure the script is running as a StarterCharacterScript (in clientChar folder)
+4. **Client-Side Script**: Ensure the script is running under StarterCharacterScripts (in clientChar folder)
 5. **Character Loading**: The system waits for the player's character to load, so it may take a moment to initialize
 
 ### Performance Tips

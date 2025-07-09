@@ -31,9 +31,9 @@
     "access": "public"
   },
   "devDependencies": {
-    "@changesets/cli": "^2.27.10",
-    "@eslint/js": "^9.16.0",
+    "@changesets/cli": "^2.29.5",
     "@daymxn/bs": "latest",
+    "@eslint/js": "^9.16.0",
     "@microsoft/api-extractor": "^7.48.0",
     "@rbxts/compiler-types": "^3.0.0-types.0",
     "@rbxts/types": "^1.0.813",
@@ -54,10 +54,10 @@
   },
   "dependencies": {
     "@rbxts/expect": "^2.0.1",
+    "@rbxts/object-utils": "^1.0.4",
+    "@rbxts/rust-classes": "^0.13.0",
     "@rbxts/services": "^1.5.5",
     "@rbxts/string-utils": "^1.0.3",
-    "@rbxts/rust-classes": "^0.13.0",
-    "@rbxts/object-utils": "^1.0.4",
     "@rbxts/t": "^3.1.1"
   },
   "peerDependencies": {
