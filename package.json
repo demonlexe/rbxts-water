@@ -1,8 +1,9 @@
 {
   "name": "@rbxts/water",
   "version": "1.0.0",
-  "description": "A short description about my library",
+  "description": "A custom water system for Roblox that provides realistic swimming mechanics and underwater effects",
   "main": "out/init.luau",
+  "typings": "out/index.d.ts",
   "scripts": {
     "build": "rbxtsc -p ./tsconfig.release.json",
     "watch": "pnpm build -w",
@@ -22,7 +23,6 @@
     "url": "https://github.com/demonlexe/rbxts-water/issues"
   },
   "license": "Apache-2.0",
-  "types": "out/index.d.ts",
   "files": [
     "out",
     "!**/*.tsbuildinfo"
