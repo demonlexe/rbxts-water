@@ -1,0 +1,66 @@
+{
+  "name": "@rbxts/water",
+  "version": "0.0.1",
+  "description": "A short description about my library",
+  "main": "out/init.luau",
+  "scripts": {
+    "build": "rbxtsc -p ./tsconfig.release.json",
+    "watch": "pnpm build -w",
+    "help": "pnpm bs help"
+  },
+  "keywords": [
+    "rbxts",
+    "typescript",
+    "roblox"
+  ],
+  "author": "demonlexe",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/demonlexe/rbxts-water.git"
+  },
+  "bugs": {
+    "url": "https://github.com/demonlexe/rbxts-water/issues"
+  },
+  "license": "Apache-2.0",
+  "types": "out/index.d.ts",
+  "files": [
+    "out",
+    "!**/*.tsbuildinfo"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.27.10",
+    "@eslint/js": "^9.16.0",
+    "@daymxn/bs": "latest",
+    "@microsoft/api-extractor": "^7.48.0",
+    "@rbxts/compiler-types": "^3.0.0-types.0",
+    "@rbxts/types": "^1.0.813",
+    "@types/eslint__js": "^8.42.3",
+    "@types/node": "^22.10.1",
+    "@typescript-eslint/eslint-plugin": "8.17.0",
+    "@typescript-eslint/parser": "8.17.0",
+    "eslint": "^9.16.0",
+    "eslint-plugin-notice": "^1.0.0",
+    "eslint-plugin-roblox-ts": "github:daymxn/eslint-plugin-roblox-ts#daymon-eslint-9",
+    "eslint-plugin-unicorn": "^56.0.1",
+    "jiti": "^2.4.1",
+    "prettier": "^3.4.2",
+    "prettier-plugin-organize-imports": "^4.1.0",
+    "roblox-ts": "^3.0.0-next",
+    "typescript": "=5.5.3",
+    "typescript-eslint": "^8.17.0"
+  },
+  "dependencies": {
+    "@rbxts/expect": "^2.0.1",
+    "@rbxts/services": "^1.5.5",
+    "@rbxts/string-utils": "^1.0.3",
+    "@rbxts/rust-classes": "^0.13.0",
+    "@rbxts/object-utils": "^1.0.4",
+    "@rbxts/t": "^3.1.1"
+  },
+  "peerDependencies": {
+    "roblox-ts": "^3.0.0"
+  }
+}
